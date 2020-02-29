@@ -4,8 +4,8 @@ import Logo from "../logo.png";
 import slugify from "slugify";
 import { Link } from "react-router-dom";
 import SelectApi from "../SelectApi/SelectApi";
-import SwaggerUI from "swagger-ui-react";
 import "swagger-ui-react/swagger-ui.css";
+import SwaggerUI from "../components/swagger-ui-react";
 
 class SwaggerUiPage extends Component {
   constructor(props) {
@@ -56,7 +56,11 @@ class SwaggerUiPage extends Component {
           />
         </header>
         <section className="container__swagger-ui">
-          <SwaggerUI url={this.state.activeApi.url} docExpansion="list" />
+          <SwaggerUI
+            url={this.state.activeApi.url}
+            docExpansion="list"
+            deepLinking={true}
+          />
         </section>
       </div>
     );
