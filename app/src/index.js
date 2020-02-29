@@ -6,7 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 import RedocPage from "./RedocPage/RedocPage";
 import SwaggerUiPage from "./SwaggerUiPage/SwaggerUiPage";
 import SelectApiPage from "./SelectApiPage/SelectApiPage";
-import AppFooter from "./AppFooter/AppFooter";
+import AppFooter from "./components/AppFooter/AppFooter";
 
 ReactDOM.render(
   <Router>
