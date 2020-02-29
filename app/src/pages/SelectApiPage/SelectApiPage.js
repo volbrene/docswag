@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./SelectApiPage.css";
-import Logo from "../logo.png";
-import AppFooter from "../components/AppFooter/AppFooter";
-import SelectApi from "../SelectApi/SelectApi";
+import Logo from "../../logo.png";
+import AppFooter from "../../components/AppFooter/AppFooter";
+import SelectApi from "../../components/SelectApi/SelectApi";
 
 class SelectApiPage extends Component {
   handleChange = selectedApi => {

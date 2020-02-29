@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./AppHeader.css";
 import Logo from "../../logo.png";
 import { Link } from "react-router-dom";
-import SelectApi from "../../SelectApi/SelectApi";
+import SelectApi from "../SelectApi/SelectApi";
 
 class AppHeader extends Component {
   render() {

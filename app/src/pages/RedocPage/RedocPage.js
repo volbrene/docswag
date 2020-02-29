@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import "./SwaggerUiPage.css";
+import "./RedocPage.css";
+import { RedocStandalone } from "redoc";
 import slugify from "slugify";
-import "swagger-ui-react/swagger-ui.css";
-import SwaggerUI from "../components/swagger-ui-react";
-import AppHeader from "../components/AppHeader/AppHeader";
+import AppHeader from "../../components/AppHeader/AppHeader";
 
-class SwaggerUiPage extends Component {
+class RedocPage extends Component {
   constructor(props) {
     super(props);
 
@@ -47,11 +46,14 @@ class SwaggerUiPage extends Component {
           activeApi={this.state.activeApi}
         />
 
-        <section className="container__swagger-ui">
-          <SwaggerUI
-            url={this.state.activeApi.url}
-            docExpansion="list"
-            deepLinking={true}
+        <section className="container__redoc">
+          <RedocStandalone
+            specUrl={this.state.activeApi.url}
+            options={{
+              nativeScrollbars: true,
+              scrollYOffset: 60,
+              theme: { colors: { primary: { main: window._env_.THEME_COLOR } } }
+            }}
           />
         </section>
       </div>
@@ -59,4 +61,4 @@ class SwaggerUiPage extends Component {
   }
 }
 
-export default SwaggerUiPage;
+export default RedocPage;
