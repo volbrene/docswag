@@ -4,6 +4,7 @@ import "./index.css";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 import RedocPage from "./RedocPage/RedocPage";
+import SwaggerUiPage from "./SwaggerUiPage/SwaggerUiPage";
 import SelectApiPage from "./SelectApiPage/SelectApiPage";
 import AppFooter from "./AppFooter/AppFooter";
 
@@ -12,7 +13,7 @@ ReactDOM.render(
     <div>
       <Route exact path="/" component={SelectApiPage} />
       <Route path="/redoc/:api" component={RedocPage} />
-      <Route path="/swaggerui/:api" component={RedocPage} />
+      <Route path="/swagger-ui/:api" component={SwaggerUiPage} />
       <AppFooter />
     </div>
   </Router>,

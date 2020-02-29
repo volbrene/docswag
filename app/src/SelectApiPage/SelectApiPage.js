@@ -6,7 +6,8 @@ import SelectApi from "../SelectApi/SelectApi";
 
 class SelectApiPage extends Component {
   handleChange = selectedApi => {
-    this.props.history.push(selectedApi.value);
+    // Make redoc dynamic
+    this.props.history.push("redoc/" + selectedApi.value);
   };
 
   render() {
