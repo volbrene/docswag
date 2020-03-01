@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "core-js": "^3.6.4",
+    "graphql": "0.13.2",
+    "graphql-playground-react": "^1.7.20",
     "mobx": "^4.15.4",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
