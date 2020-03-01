@@ -6,7 +6,7 @@ footer {
   z-index: 999;
 }
 
-footer .copyright {
+footer .inner {
   display: inline-block;
   background-color: #ffffff;
   border-top-left-radius: 5px;
@@ -15,4 +15,16 @@ footer .copyright {
   padding: 5px 10px;
   text-decoration: none;
   color: black;
+}
+
+footer .inner span {
+  margin: 0 5px;
+}
+
+footer .inner span:first-child {
+  margin-left: 0;
+}
+
+footer .inner span:last-child {
+  margin-right: 0;
 }
