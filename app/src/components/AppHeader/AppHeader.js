@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./AppHeader.css";
-import Logo from "../../logo.png";
+import Logo from "../../docswag.svg";
 import { Link } from "react-router-dom";
 import SelectApi from "../SelectApi/SelectApi";
 
