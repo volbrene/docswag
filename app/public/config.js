@@ -15,6 +15,5 @@ window._env_ = {
       name: "Airport"
     }
   ],
-  // THEME_COLOR: '#32329f',
   THEME_COLOR: "#FF5858"
 };

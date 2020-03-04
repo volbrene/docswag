@@ -16,14 +16,14 @@ class AppFooter extends Component {
       <footer>
         <div className="inner">
           <a
-            class="github-button"
+            className="github-button"
             href="https://github.com/volbrene"
             aria-label="Follow @volbrene on GitHub"
           >
             Follow @volbrene
           </a>
           <a
-            class="github-button"
+            className="github-button"
             href="https://github.com/volbrene/docswag"
             data-icon="octicon-star"
             aria-label="Star volbrene/docswag on GitHub"

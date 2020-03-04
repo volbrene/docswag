@@ -5,13 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fff4de;
+  background-color: #fffcf7;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
 }
 
 .content {
-  padding-top: 50px;
+  padding-top: 4rem;
 }
 
-section {
-  background: #fff;
+#root {
+  position: relative;
 }
