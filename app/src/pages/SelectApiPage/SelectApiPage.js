@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./SelectApiPage.css";
-import Logo from "../../logo.png";
+import Logo from "../../docswag.svg";
 import AppFooter from "../../components/AppFooter/AppFooter";
 import SelectApi from "../../components/SelectApi/SelectApi";
 

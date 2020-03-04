@@ -5,8 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff4de;
 }
 
 .content {
   padding-top: 50px;
+}
+
+section {
+  background: #fff;
 }
