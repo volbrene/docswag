@@ -1,25 +1,28 @@
-import React, { Component } from "react";
+import React from "react";
 import "./AppHeader.css";
 import Logo from "../../docswag.svg";
 import { Link } from "react-router-dom";
 import SelectApi from "../SelectApi/SelectApi";
 
-class AppHeader extends Component {
-  render() {
-    return (
-      <header className="App-header">
-        <Link to={"/"}>
-          <img src={Logo} alt="Redoc" />
-        </Link>
+const AppHeader = props => {
+  return (
+    <header className="App-header">
+      <Link to={"/"}>
+        <img src={Logo} alt="DocSwag" />
+      </Link>
 
-        <SelectApi
-          className="select"
-          value={this.props.activeApi}
-          onChange={this.props.handleChange}
-        />
-      </header>
-    );
-  }
-}
+      <button onClick={() => props.handleSelectUi("redoc")}>redoc</button>
+      <button onClick={() => props.handleSelectUi("swagger-ui")}>
+        Swagger Ui
+      </button>
+
+      <SelectApi
+        className="select"
+        value={props.selectedApi}
+        onChange={props.handleSelectApi}
+      />
+    </header>
+  );
+};
 
 export default AppHeader;

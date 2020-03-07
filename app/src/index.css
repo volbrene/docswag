@@ -8,6 +8,12 @@ body {
   background-color: #fff4de;
 }
 
-.content {
-  padding-top: 50px;
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: 4rem;
 }
